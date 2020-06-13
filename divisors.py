@@ -13,7 +13,7 @@ divisors(13); #should return "13 is prime"
 
 """
 
-# way one, but the exit is not the official answer
+# path one, but the exit is not the official answer
 
 def divisors(integer):
     l = []
@@ -25,7 +25,7 @@ def divisors(integer):
         return print(("{0} is prime").format(integer))
     return l
 
-# way two, official answer
+# path two, official answer
 
 def divisors(integer):
     lista = []
@@ -37,7 +37,7 @@ def divisors(integer):
         return str(integer) + " is prime"
     return lista
 
-# way 3 with kist comprehesion
+# path 3 with list comprehesion
 
 def divisors(integer):
     lista = [a for a in range(2,integer) if integer%a == 0]
