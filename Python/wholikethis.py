@@ -41,6 +41,6 @@ def likes(names):
         return names[0]+', '+names[1]+' and '+names[2] + ' like this'
     if len(names) >= 4:
         final_len = len(names) - 2
-        return names[0]+', '+names[1]+' and '+str(final_len)+ ' others like this'
+        return names[0]+', '+names[1]+' and '+ str(final_len)+ ' others like this'
     if len(names) == 0:
         return "no one likes this"
