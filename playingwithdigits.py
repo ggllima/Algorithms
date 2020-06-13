@@ -21,7 +21,8 @@ If it is the case we will return k, if not return -1.
 Note: n and p will always be given as strictly positive integers.
 """
 
-# path one
+# first way
+
 def dig_pow(n, p):
     soma = 0
     string = str(n)
@@ -34,7 +35,7 @@ def dig_pow(n, p):
     else:
         return -1
 
-# path two, using enumerate function
+# second way, using enumerate function
 def dig_pow(n, p):
     result = sum(int(i)**pw for pw,i in enumerate(str(n),p))
     if result%n == 0:

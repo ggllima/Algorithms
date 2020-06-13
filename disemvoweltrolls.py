@@ -11,20 +11,20 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata y isn't considered a vowel.
 
 """
-# path one, not so practical, but functional
+# first way, not so practical, but functional
 def disemvowel(string):
     str_list = [i for i in string]
     array_list = [i for i in str_list if i.lower() != 'a' and i.lower() != 'e' and i.lower() != 'i' and i.lower() != 'o' and i.lower() != 'u']
     string = ''.join(array_list)
     return string
 
-# path two, a little more practical and very functional
+# second way, a little more practical and very functional
 def disemvowel(string):
     for i in 'aAeEiIoOuU':
         string = string.replace(i,'')
     return string
 
-# path three, a mix of path one and path two, it’s not necessary, but it’s fun
+# third way, a mix of first and second way, it’s not necessary, but it’s fun
 
 def disemvowel(string):
     str_list = [i for i in string]
